@@ -98,8 +98,6 @@ const COMPOUND_OPTIONS = [
   { key: "daily",      label: "Daily",      n: 365 },
 ]
 
-import { RELATED_LINKS as RELATED } from "./lib/links"
-
 function fmt(n) { return "$" + Math.round(n).toLocaleString("en-US") }
 function fmtDec(n) { return "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }
 
