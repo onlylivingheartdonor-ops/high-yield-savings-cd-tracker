@@ -2,8 +2,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>TOOL TITLE</title>
-        <meta name="description" content="TOOL DESCRIPTION" />
+        <title>High-Yield Saving & CD Calculator</title>
+        <meta
+          name="description"
+          content="Calculate interest earnings on high-yield savings accounts and CDs. Compare compounding frequencies, see a full growth schedule, and find out what your money is really earning."
+        />
 
         <script
           async
@@ -15,4 +18,5 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
 
