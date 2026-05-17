@@ -190,7 +190,7 @@ export default function Page() {
             <span className="hys-compound-label">Compounding frequency</span>
             <div className="hys-compound-row">
               {COMPOUND_OPTIONS.map(o => (
-                <button key={o.key} className={`hys-compound-tab${compoundKey === o.key ? " on" : ""}`}
+                <button key={o.key} className={"hys-compound-tab" + (compoundKey === o.key ? " on" : "")}
                   onClick={() => setCompound(o.key)}>{o.label}</button>
               ))}
             </div>
@@ -230,7 +230,7 @@ export default function Page() {
                   {compoundComparison.map(o => (
                     <div className="hys-compound-cell" key={o.key}>
                       <p className="hys-compound-cell-label">{o.label}</p>
-                      <p className={`hys-compound-cell-val${compoundKey === o.key ? "" : " muted"}`}>
+                      <p className={"hys-compound-cell-val" + (compoundKey === o.key ? "" : " muted")}>
                         {fmtDec(o.interest)}
                       </p>
                     </div>
@@ -241,7 +241,7 @@ export default function Page() {
               <span className="hys-schedule-toggle" onClick={() => setShowSchedule(s => !s)}>
                 {showSchedule ? "Hide" : "Show"} growth schedule
               </span>
-              <div className={`hys-schedule${showSchedule ? " show" : ""}`}>
+              <div className={"hys-schedule" + (showSchedule ? " show" : "")}>
                 <table className="hys-schedule-table">
                   <thead>
                     <tr>
@@ -356,16 +356,16 @@ export default function Page() {
         {/* ========== MONEYWISE LINK — END ========== */}
 
         {/* RELATED */}
-        <div className="dr-card">
-          <p className="dr-section-title">Related tools</p>
-          <div className="dr-related-links">
+        <div className="hys-card">
+          <p className="hys-section-title">Related tools</p>
+          <div className="hys-related-links">
             {RELATED.map((r, i) => (
-              <a key={i} className="dr-related-link" href={r.href}>{r.label}</a>
+              <a key={i} className="hys-related-link" href={r.href}>{r.label}</a>
             ))}
           </div>
-          <div className="dr-disclaimer">
+          <div className="hys-disclaimer">
             This tool provides estimates for informational purposes only and does not constitute financial advice. Results assume a fixed interest rate and fixed monthly payment for the full repayment period. This site may use cookies and analytics. By using this site, you agree to our Privacy Policy and Terms of Service.
-            <div className="dr-footer-links">
+            <div className="hys-footer-links">
               <a href="/privacy">Privacy Policy</a>
               <a href="/terms">Terms of Service</a>
             </div>
