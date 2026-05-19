@@ -3,17 +3,17 @@ export const metadata = {
   description: "Calculate interest earnings on high-yield savings accounts and CDs. Compare compounding frequencies, see a full growth schedule, and find out what your money is really earning.",
   
   alternates: {
-    canonical: "https:/https://www.highyieldsavingscalculator.com",           // ← MUST CHANGE
+    canonical: "https://www.highyieldsavingscalculator.com",           // ← MUST CHANGE
   },
 
   openGraph: {
     title: "High-Yield Saving & CD Calculator | Select Only the Best Investments",
     description: "Calculate interest earnings on high-yield savings accounts and CDs. Compare compounding frequencies, see a full growth schedule, and find out what your money is really earning.",
-    url: "https://https:/https://www.highyieldsavingscalculator.com",                 // ← MUST CHANGE
+    url: "https://www.highyieldsavingscalculator.com",                 // ← MUST CHANGE
     siteName: "Moneywise Calculators",             // ← Change
     images: [
       {
-        url: "https://https://https:/https://www.highyieldsavingscalculator.com/og-image.png", // ← MUST CHANGE
+        url: "https://www.highyieldsavingscalculator.com/og-image.png", // ← MUST CHANGE
         width: 1200,
         height: 630,
         alt: "High-Yield Saving & CD Calculator",
